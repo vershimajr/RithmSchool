@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <article>
+        This is an article.
+        <div>
+            <p>This is a paragraph inside of a div inside of an article.</p>
+        </div>
+        <input id="edit_user" type="text" value="My user name">
+        <ul class="items">
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ul>
+    </article>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".items").click(function() {
+          $("li").animate({
+            // what properties to manipulate
+            opacity: 0.5,
+            marginLeft: "+=100",
+          }, 5000, function() {
+            // this code will be executed when the animation is complete
+            $("p").css("font-size","+=5");
+          });
+        });
+      });
+  </script>
+</body>
+</html>

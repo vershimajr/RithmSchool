@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Long list</title>
+</head>
+<body>
+  <div>
+    <a href="http://www.google.com" id="google">Google</a>
+  </div>
+  <div>
+    <a href="http://www.yahoo.com" id="yahoo" class="dontlink">Yahoo</a>
+  </div>
+  <div>
+    <a href="http://www.bing.com" id="bing" class="dontlink">Bing</a>
+  </div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(function() {
+
+      $("div").on('click', function(e) {
+        console.log("you clicked on a div!");
+      });
+
+      $("a.dontlink").on('click', function(e) {
+        e.preventDefault();
+      });
+
+    });
+  </script>
+</body>
+</html>
