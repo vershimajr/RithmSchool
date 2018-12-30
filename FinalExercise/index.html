@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>The Dynamic List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script src="dynamicList.js"></script>
+  </head>
+  <body>
+    <h1 class="title">My Favorite Movies</h1>
+    <div class="input">
+      <span>Title</span>
+      <span>
+        <input type="text" placeholder="Movie Title"></input>
+      </span>
+      <span>Rating</span>
+      <span>
+        <input type="text" placeholder="Rate the movie from 0 to 10"></input>
+      </span>
+      <span>
+        <button type="button" id="addMovie">Add Movie</button>
+      </span>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col" class="control">Title</th>
+          <th scope="col" class="control">Rating</th>
+          <th scope="col">Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </body>
+</html>
